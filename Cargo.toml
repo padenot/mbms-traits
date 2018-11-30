@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["Paul Adenot <paul@paul.cx>"]
 
 [dependencies]
-monome-rs = "0.1.2"
+monome-rs =  {path = "../monome-rs" }
 
 [dependencies.bela]
 path = "../bela-rs/"

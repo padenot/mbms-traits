@@ -13,3 +13,16 @@ pub trait InstrumentControl {
     fn main_thread_work(&mut self);
     fn render(&mut self, grid: &mut [u8; 128]);
 }
+
+pub enum BelaPort {
+  // Audio input, 0 or 1
+  AudioIn(usize),
+  // Audio output, 0 or 1
+  AudioOut(usize),
+  // Digital IO, 0 to 15
+  Digital(usize),
+  // Analog input, 0 to 7
+  AnalogIn(usize),
+  // Analog output, 0 to 7
+  AnalogOut(usize),
+}
